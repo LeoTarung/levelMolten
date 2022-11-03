@@ -27,6 +27,7 @@ Route::get('/test', function () {
 
 
 Route::get('/dashboard', [moltenController::class, 'dashboard']);
+Route::get('/testjam', [moltenController::class, 'test']);
 // Route::get('/detail/{molten}', [moltenController::class, 'detail']);
 // Route::put('/detail/update/', [moltenController::class, 'update']);
 

@@ -136,4 +136,14 @@ class moltenController extends Controller
 
         ]);
     }
+
+    public function test()
+    {
+        return view('testjam', [
+            "title" => 'Test Jam',
+            // "molt" => $sql
+            // return (dd($request));
+
+        ]);
+    }
 }
