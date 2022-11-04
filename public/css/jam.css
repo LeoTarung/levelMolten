@@ -8,8 +8,8 @@
                                                                                                             top: 50%;
                                                                                                             left: 50%; */
     /* transform: translateX(-50%) translateY(-50%); */
-    color: #49e6de;
-    font-size: 27px;
+    color: #114442;
+    font-size: 21px;
     font-family: "Arial";
     letter-spacing: 5px;
 }
@@ -22,7 +22,7 @@
 }
 
 .logo {
-    width: 160px ;
-    height: 60px;
+    width: 260px ;
+    height: 80px;
 }
 

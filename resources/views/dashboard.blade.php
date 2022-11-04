@@ -19,21 +19,22 @@
 
         <div class="container-fluid d-flex text-center border-bottom shadow-sm">
             <div class="col-md-4">
-                <div class="d-flex justify-content-center text-center ">
+                <div class="d-flex justify-content-start text-center mb-2 ">
                     <img class="logo" src="{{ url('/img/nusametal.png') }}" alt="Image" />
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="d-flex justify-content-center text-center ">
-                    <h1><a class="text-decoration-none text-dark fw-bold" href="/dashboard">Level
-                            Molten</a>
+                    <h1 class="display-4 mt-4"><a class=" fw-semibold text-decoration-none text-dark fs-7"
+                            href="/dashboard">Level
+                            Molten Monitoring</a>
                     </h1>
                 </div>
             </div>
             <div class="col-md-4">
                 {{-- <div class="d-flex justify-content-end border-bottom text-right"> --}}
-                <div class="d-flex justify-content-center ms-3 mt-3 ">
-                    <label id="MyClockDisplay" class="clock bg-dark border border-info shadow rounded" onload="showTime()">
+                <div class="d-flex justify-content-end ms-3 mt-4 ">
+                    <label id="MyClockDisplay" class="clock shadow-sm rounded mt-3 px-5 " onload="showTime()">
                     </label>
 
                 </div>
@@ -49,12 +50,12 @@
                 <div class="card card-rounded card-back shadow">
                     {{-- <a class="text-decoration-none text-dark" href="/detail/{{ $molt1['mc'] }}"> --}}
                     <div class="card-header bg-warning rounded-top fw-bold fs-15 text-center">
-                        <h2>MC :
-                            {{ $molt1['mc'] }}</h2>
+                        <h2><strong>MC :
+                                {{ $molt1['mc'] }}</strong></h2>
                     </div>
-                    <div class="card-body py-2 px-0">
+                    <div class="card-body py-0 px-0">
                         {{-- <h6 class="card-title text-center fs-6"></h6> --}}
-                        <div class="card-content mt-1">
+                        <div class="card-content">
                             <div id="chartdiv" class="chartdiv">
                             </div>
                         </div>
@@ -67,9 +68,10 @@
                 <div class="card card-rounded card-back shadow">
                     {{-- <a class="text-decoration-none text-dark" href="/detail/{{ $molt2['mc'] }}"> --}}
                     <div class="card-header bg-warning rounded-top fw-bold  text-center">
-                        <h2>MC : {{ $molt2['mc'] }}
+                        <h2><strong>MC : {{ $molt2['mc'] }}
                     </div>
-                    <div class="card-body py-2 px-0">
+                    </strong>
+                    <div class="card-body py-0 px-0">
                         {{-- <h6 class="card-title text-center fs-6"></h6> --}}
                         <div class="card-content">
                             <div id="chartdiv1" class="chartdiv">
@@ -83,9 +85,10 @@
                 <div class="card card-rounded card-back shadow">
                     {{-- <a class="text-decoration-none text-dark" href="/detail/{{ $molt3['mc'] }}"> --}}
                     <div class="card-header bg-warning rounded-top fw-bold  text-center">
-                        <h2>MC : {{ $molt3['mc'] }}</h2>
+                        <h2><strong>MC : {{ $molt3['mc'] }}</h2>
                     </div>
-                    <div class="card-body py-2 px-0">
+                    </strong>
+                    <div class="card-body py-0 px-0">
                         {{-- <h6 class="card-title text-center fs-6"></h6> --}}
 
                         {{-- {{ $molt->min }} --}}
@@ -101,9 +104,10 @@
                 <div class="card card-rounded card-back shadow">
                     {{-- <a class="text-decoration-none text-dark" href="/detail/{{ $molt4['mc'] }}"> --}}
                     <div class="card-header bg-warning rounded-top fw-bold  text-center">
-                        <h2>MC : {{ $molt4['mc'] }}</h2>
+                        <h2><strong>MC : {{ $molt4['mc'] }}</h2>
                     </div>
-                    <div class="card-body py-2 px-0">
+                    </strong>
+                    <div class="card-body py-0 px-0">
                         {{-- <h6 class="card-title text-center fs-6"></h6> --}}
                         <div class="card-content">
                             <div id="chartdiv3" class="chartdiv">
@@ -117,9 +121,10 @@
                 <div class="card card-rounded card-back shadow">
                     {{-- <a class="text-decoration-none text-dark" href="/detail/{{ $molt5['mc'] }}"> --}}
                     <div class="card-header bg-warning rounded-top fw-bold  text-center">
-                        <h2>MC : {{ $molt5['mc'] }}</h2>
+                        <h2><strong>MC : {{ $molt5['mc'] }}</h2>
                     </div>
-                    <div class="card-body py-2 px-0">
+                    </strong>
+                    <div class="card-body py-0 px-0">
                         {{-- <h6 class="card-title text-center fs-6"></h6> --}}
                         <div class="card-content">
                             <div id="chartdiv4" class="chartdiv">
@@ -132,9 +137,10 @@
             <div class="col-3 mt-3">
                 <div class="card card-rounded card-back shadow">
                     <div class="card-header bg-warning rounded-top fw-bold  text-center">
-                        <h2>MC : {{ $molt6['mc'] }}</h2>
+                        <h2><strong>MC : {{ $molt6['mc'] }}</h2>
                     </div>
-                    <div class="card-body py-2 px-0">
+                    </strong>
+                    <div class="card-body py-0 px-0">
                         {{-- <h6 class="card-title text-center fs-6"></h6> --}}
                         <div class="card-content">
                             <div id="chartdiv5" class="chartdiv">
@@ -147,9 +153,10 @@
             <div class="col-3 mt-3">
                 <div class="card card-rounded card-back shadow">
                     <div class="card-header bg-warning rounded-top fw-bold  text-center">
-                        <h2>MC : </h2>
+                        <h2><strong>MC : </h2>
                     </div>
-                    <div class="card-body py-2 px-0">
+                    </strong>
+                    <div class="card-body py-0 px-0">
                         {{-- <h6 class="card-title text-center fs-6"></h6> --}}
                         <div class="card-content">
                             <div id="chartdiv1" class="chartdiv">
@@ -162,9 +169,10 @@
             <div class="col-3 mt-3">
                 <div class="card card-rounded card-back shadow">
                     <div class="card-header bg-warning rounded-top fw-bold  text-center">
-                        <h2>MC : </h2>
+                        <h2><strong>MC : </h2>
                     </div>
-                    <div class="card-body py-2 px-0">
+                    </strong>
+                    <div class="card-body py-0 px-0">
                         {{-- <h6 class="card-title text-center fs-6"></h6> --}}
                         <div class="card-content">
                             <div id="chartdiv1" class="chartdiv">
