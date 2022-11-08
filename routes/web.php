@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\moltenController;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Route;
+use App\Models\level;
+use App\Http\Controllers\moltenController;
 
 
 /*
@@ -19,9 +21,19 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/test', function () {
-
+    $sql = level::all();
+    $mesin47 = $sql->find(47);
+    $mesin48 = $sql->find(48);
+    $mesin51 = $sql->find(51);
+    $mesin52 = $sql->find(52);
+    $mesin53 = $sql->find(53);
     return view('test', [
-        "title" => 'Dashboard'
+        "title" => 'Dashboard',
+        "molt1" => $mesin47,
+        "molt2" => $mesin48,
+        "molt3" => $mesin51,
+        "molt4" => $mesin52,
+        "molt5" => $mesin53,
     ]);
 });
 
